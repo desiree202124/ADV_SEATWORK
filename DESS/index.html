@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Generator</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f2f5;
+            font-family: sans-serif;
+        }
+        /* Optimized for 400 x 858 */
+        .container {
+            width: 400px;
+            height: 858px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        input {
+            padding: 15px;
+            margin-top: 50px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover { background: #0056b3; }
+        #greetingOutput {
+            margin-top: 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Greeting Generator</h1>
+        <p>What's your name?</p>
+        <input type="text" id="nameInput" placeholder="Enter name...">
+        <button id="greetBtn">Generate Greeting</button>
+        <div id="greetingOutput"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
